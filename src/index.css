@@ -1,0 +1,86 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* color: rgba(255, 255, 255, 0.87); */
+  /* background-image: linear-gradient(to bottom left,gray,#330072); */
+  background-color: #330072;
+  color: #ffffff;
+  /* background-color: #5000b0; */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@font-face {
+  font-family: Dairy Milk Font;
+  src: url(./assets/fonts/DairyMilkFont-Medium.otf);
+}
+a {
+  text-decoration: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+main{
+  position: relative;
+  height: 100vh;
+}
+.background_circle{
+  position: absolute;
+  border-radius: 50%;
+  background-color:#DDDDDD ;
+  opacity: 0.149;
+}
+.circle_one{
+  width: 200px;
+  height: 200px;
+  top: -10px;
+  left:-50px
+}
+.circle_two{
+  width: 25px;
+  height: 25px;
+  top: 130px;
+  right: 60px;
+}
+.circle_three{
+  width: 20px;
+  height: 20px;
+  bottom: 190px;
+  right: 105px;
+}
+.circle_four{
+  width: 100px;
+  height: 100px;
+  bottom: 90px;
+  left: -4px;
+}
+.circle_five{
+  width: 120px;
+  height: 120px;
+  bottom: -2px;
+  right: -15px;
+}
+.upper_layer{
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.celebration_img{
+  width:50vh;
+}
+p{
+  font-size: 44px;
+line-height: 46px;
+font-weight: 500;
+font-family: "Dairy Milk Font";
+}
