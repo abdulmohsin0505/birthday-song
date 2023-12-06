@@ -88,7 +88,7 @@ const Registration = () => {
             width: "376px",
           }}
         >
-          <h2 style={{ fontSize: "20px", marginTop: "0", padding: "5px" }}>
+          <h2 style={{ fontSize: "18px", marginTop: "0", padding: "5px" }}>
             Register to create
           </h2>
           <div>
@@ -138,7 +138,7 @@ const Registration = () => {
               (Cadbury)
             </label>
           </div>
-          <div style={{ marginTop: "10px", textAlign: "left" }}>
+          <div style={{ marginTop: "5px", textAlign: "left" }}>
             <input
               type="checkbox"
               id="promotion"
@@ -148,7 +148,7 @@ const Registration = () => {
             />
             <label
               htmlFor="promotion"
-              style={{ marginLeft: "10px", fontSize: "12px" }}
+              style={{ marginLeft: "10px", fontSize: "10px" }}
             >
               I would like to receive promotional communication from Mondelez
               (Cadbury) about its products and offers.
@@ -161,6 +161,7 @@ const Registration = () => {
               borderRadius: "10px",
               background: "#e7b464",
               marginTop: "5px",
+              // marginBottom : "40px"
             }}
           >
             Submit
