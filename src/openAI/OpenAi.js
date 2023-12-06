@@ -1,8 +1,8 @@
 import OpenAI from "openai";
 
 const openai = new OpenAI({
-  apiKey: "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",
-  dangerouslyAllowBrowser: true,
+  apiKey: import.meta.env.VITE_REACT_API_KEY,
+  dangerouslyAllowBrowser : true
 });
 
 export const opneAi = async (name, gender, genre) => {
@@ -26,6 +26,7 @@ export const opneAi = async (name, gender, genre) => {
     console.log(completion.choices[0]);
     return completion.choices[0];
   } catch (error) {
-    console.log(error.name);
+    console.log(error.message);
+    return error.message
   }
 };
