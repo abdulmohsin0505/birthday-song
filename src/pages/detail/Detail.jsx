@@ -13,7 +13,6 @@ import ProgressBar from "../../components/progressBar/ProgressBar";
 import Image from "../../components/image/Image";
 import Title from "../../components/title/Title";
 import Header from "../../components/header/Header";
-
 const Detail = () => {
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
@@ -25,17 +24,23 @@ const Detail = () => {
     voice: "male",
   });
   const [lyrics, setLyrics] = useState("geneating lyrics for you...");
-  const fetchLyrics = async () => {
-    const res = await opneAi(formData.name, formData.gender, formData.genre);
-    const data = res;
-    setLyrics(data.message.content);
-  };
+  
 
   useEffect(() => {
+    const fetchLyrics = async () => {
+      try {
+        const res = await opneAi(formData.name, formData.gender, formData.genre);
+      const data = res;
+      setLyrics(data.message.content);
+      } catch (error) {
+        setLyrics(error.message)
+      }
+      
+    };
     if (step === 4 && formData.name) {
       fetchLyrics();
     }
-  }, [step, formData.name]);
+  }, [step, formData.name,formData.gender,formData.genre]);
 
   const handleInputChange = (value, name) => {
     setFormData({ ...formData, [name]: value });
