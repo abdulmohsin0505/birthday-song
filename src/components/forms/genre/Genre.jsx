@@ -38,7 +38,7 @@ const Genre = ({ handleInputChange, genre }) => {
         width: "350px",
         border: "2px solid #e7b464",
         borderRadius: "10px",
-        margin: "10px 0",
+        // margin: "10px 0",
       }}
     >
       <div

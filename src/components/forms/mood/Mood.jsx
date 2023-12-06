@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState ,useEffect} from "react";
 
 // icons
 import happy from "../../../assets/icons/Happy.png";
@@ -6,7 +6,6 @@ import calm from "../../../assets/icons/Calm.png";
 import motivational from "../../../assets/icons/Motivational.png";
 import romantic from "../../../assets/icons/Romantic.png";
 import funny from "../../../assets/icons/Funny.png";
-import { useEffect } from "react";
 
 const moodOptions = [
   { id: "happy", label: "Happy", image: happy },
@@ -37,6 +36,8 @@ const Mood = ({ handleInputChange, mood }) => {
         width: "350px",
         border: "2px solid #e7b464",
         borderRadius: "10px",
+        marginTop : "0",
+        marginBottom: "10px"
       }}
     >
       <div
