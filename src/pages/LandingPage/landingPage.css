@@ -1,0 +1,38 @@
+.celebration_img {
+  width: 40vh;
+}
+p {
+  font-size: 18px;
+  line-height: 1pxpx;
+  font-weight: 500;
+  font-family: "Dairy Milk Font";
+}
+h2 {
+  font-size: 22px;
+  margin-top: 20px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: "Gibson";
+  text-align: center;
+}
+
+.continue_btn {
+  background-color: #e7b464;
+  font-size: 18px;
+  color: #340073;
+  font-weight: bold;
+  font-family: "Gibson";
+  text-align: center;
+  padding: 8px 14px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.continue_btn a {
+  text-decoration: none;
+}
+.signup_link {
+  margin-top: 10px;
+  font-size: 18px;
+}

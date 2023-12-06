@@ -1,0 +1,31 @@
+.header{
+    width: 100%;
+    background-color: #15002e;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+}
+.logo{
+    margin-right: 15px;
+}
+
+.logo_img{
+    height: 40px;
+    width: 100%;
+}
+.logo2_img{
+    width: 100px;
+    height: 50px;
+}
+.hamburger_btn{
+    margin-left: auto;
+    background: inherit;
+    outline: none;
+    border: none;
+}
+.hamburger_icon{
+    width: 25px;
+    height: 25px;
+}

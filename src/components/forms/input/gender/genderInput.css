@@ -1,0 +1,26 @@
+select {
+  width: 100%;
+  height: 40px;
+  padding: 20px;
+  margin-bottom: 10px;
+  /* border: 1px solid #ccc; */
+  border-radius: 20px;
+  padding: 10px;
+  border: none;
+}
+select:focus {
+  border: none;
+  outline: none;
+}
+option {
+  width: 100%;
+  height: 40px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 10px;
+}
+select::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  border-radius: 50%;
+}
